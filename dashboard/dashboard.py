@@ -6,7 +6,7 @@ import streamlit as st
 sns.set(style='white')
 
 # Load Data
-df = pd.read_csv("https://raw.githubusercontent.com/sfhabibie/air-quality/main/dashboard/main_data.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/byhabibie/air-quality/main/dashboard/main_data.csv")
 df['datetime'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
 df['year_month'] = df['datetime'].dt.to_period('M')
 
